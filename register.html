@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Step Registration</title>
+    <link rel="stylesheet" href="Libs/Bootstrap 6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container mt-10 pt-10">
+      <div class="row">
+        <div class="col-6">
+          <img src="img/3123i2lmPiL._AC_SY780_.jpg" alt="" class="" />
+        </div>
+        <div class="col-6">
+          <div>
+            <h2>Welcome</h2>
+            <p>Go ahead and sign up let everyone know <br>how awesome you are.</p>
+            <h5 id="result"></h5>
+          </div>
+          <form onsubmit="return validateData()" action="successful.html" target="_blank">
+            <div class="md:col-12">
+              <label for="inputUserName" class="form-label">User Name</label>
+              <input
+                type="text"
+                class="form-control p-4 mb-2"
+                id="inputUserName"
+                placeholder="Enter Your User Name"
+              />
+            </div>
+
+            <div class="md:col-12">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control p-4 mb-2"
+                id="inputEmail"
+                placeholder="Enter Your Email"
+              />
+            </div>
+            <div class="md:col-12">
+              <label for="inputPassword" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control p-4 mb-2"
+                id="inputPassword"
+                placeholder="Enter Your Password"
+              />
+            </div>
+            <div class="md:col-12">
+              <label for="inputConfirmPassword" class="form-label mb-2" 
+                >Confirm Your Password</label
+              >
+              <input
+                type="password"
+                class="form-control p-4 mb-5"
+                id="inputConfirmPassword"
+                placeholder="Enter Your Password Again"
+              />
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn-solid theme-primary w-100">
+                Sign in
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="Libs/Bootstrap 6/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
